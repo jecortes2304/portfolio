@@ -15,7 +15,7 @@ function Header() {
                         <img src="logo.png" width={120} height={120}/>
                         <br/>
                         <h1>CorteStudios</h1>
-                        <h3 className="rotate">DESARROLLO MÓVIL, DESARROLLO DE SOFTWARE, DESARROLLO WEB</h3>
+                        <h3 className="rotate">DESARROLLO asdasd MÓVIL, DESARROLLO DE SOFTWARE, DESARROLLO WEB</h3>
                         <p>Ingeniero de software con experiencia en el desarrollo móvil y de escritorio, con ganas de
                             aprender cada día y superarme mediante nuevos desafíos</p>
                         <a href={cvUrl}  target="_blank" rel="noopener noreferrer" className="btn btn-default smoothScroll wow fadeInUp" data-wow-delay="1s">
