@@ -100,7 +100,7 @@
         <counts>
           <entry key="css" value="29" />
           <entry key="html" value="2" />
-          <entry key="js" value="60" />
+          <entry key="js" value="67" />
           <entry key="json" value="19" />
           <entry key="png" value="3" />
           <entry key="rnc" value="2" />
@@ -113,7 +113,7 @@
           <entry key="HTML" value="2" />
           <entry key="Image" value="3" />
           <entry key="JSON" value="19" />
-          <entry key="JavaScript" value="60" />
+          <entry key="JavaScript" value="67" />
           <entry key="RNG Compact" value="2" />
           <entry key="TypeScript" value="1" />
         </counts>
@@ -124,7 +124,7 @@
           <entry key="html" value="10" />
           <entry key="js" value="5431" />
           <entry key="json" value="1742" />
-          <entry key="txt" value="20" />
+          <entry key="txt" value="75" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
@@ -133,7 +133,19 @@
           <entry key="HTML" value="10" />
           <entry key="JSON" value="1742" />
           <entry key="JavaScript" value="5431" />
-          <entry key="PLAIN_TEXT" value="20" />
+          <entry key="PLAIN_TEXT" value="75" />
+        </counts>
+      </usages-collector>
+      <usages-collector id="statistics.vcs.git.usages">
+        <counts>
+          <entry key="git.branch.checkout.local" value="7" />
+          <entry key="git.branch.compare" value="1" />
+          <entry key="git.branch.create.new" value="3" />
+          <entry key="git.branch.create.new.nocheckout" value="1" />
+          <entry key="git.branch.delete.local" value="6" />
+          <entry key="git.branch.merge" value="3" />
+          <entry key="git.branch.rename" value="6" />
+          <entry key="git.checkout.as.new.branch" value="2" />
         </counts>
       </usages-collector>
     </session>
@@ -143,8 +155,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/components/contact.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="181">
-              <caret line="88" column="34" lean-forward="true" selection-start-line="88" selection-start-column="34" selection-end-line="88" selection-end-column="34" />
+            <state relative-caret-position="147">
+              <caret line="77" column="12" lean-forward="true" selection-start-line="77" selection-start-column="12" selection-end-line="77" selection-end-column="12" />
             </state>
           </provider>
         </entry>
@@ -185,6 +197,11 @@
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+    <option name="RECENT_BRANCH_BY_REPOSITORY">
+      <map>
+        <entry key="$PROJECT_DIR$" value="develop" />
+      </map>
+    </option>
   </component>
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
@@ -405,7 +422,7 @@
       <workItem from="1653363479123" duration="291000" />
       <workItem from="1653363824387" duration="737000" />
       <workItem from="1653393873264" duration="2260000" />
-      <workItem from="1653515229194" duration="459000" />
+      <workItem from="1653515229194" duration="4957000" />
     </task>
     <task id="LOCAL-00001" summary="Commit tested">
       <created>1653393949082</created>
@@ -421,30 +438,44 @@
       <option name="project" value="LOCAL" />
       <updated>1653394128415</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="Direccion cambiada">
+      <created>1653515718441</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1653515718441</updated>
+    </task>
+    <task id="LOCAL-00004" summary="Address changed">
+      <created>1653516932190</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1653516932190</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="187024000" />
+    <option name="totallyTimeSpent" value="191522000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-7" y="-7" width="1550" height="838" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.24983476" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.24983476" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="npm" order="2" side_tool="true" />
       <window_info id="Favorites" order="3" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.32907802" />
-      <window_info anchor="bottom" id="Run" order="2" weight="0.4283688" />
+      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.4283688" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" />
       <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
       <window_info anchor="bottom" id="Version Control" order="8" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Event Log" order="9" side_tool="true" />
+      <window_info anchor="bottom" id="Event Log" order="9" side_tool="true" weight="0.32907802" />
       <window_info anchor="bottom" id="Terminal" order="10" weight="0.45957446" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
@@ -460,7 +491,9 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Commit tested" />
     <MESSAGE value="Commit reverse" />
-    <option name="LAST_COMMIT_MESSAGE" value="Commit reverse" />
+    <MESSAGE value="Direccion cambiada" />
+    <MESSAGE value="Address changed" />
+    <option name="LAST_COMMIT_MESSAGE" value="Address changed" />
   </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/public/css/font-awesome.min.css">
@@ -745,8 +778,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/components/contact.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="181">
-          <caret line="88" column="34" lean-forward="true" selection-start-line="88" selection-start-column="34" selection-end-line="88" selection-end-column="34" />
+        <state relative-caret-position="147">
+          <caret line="77" column="12" lean-forward="true" selection-start-line="77" selection-start-column="12" selection-end-line="77" selection-end-column="12" />
         </state>
       </provider>
     </entry>

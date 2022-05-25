@@ -85,7 +85,7 @@ function Contact() {
                             <p className="contact-title">CONTACTAR</p>
                             <p><i className="fa fa-phone"/> +34 643 52 1716</p>
                             <p><i className="fa fa-envelope-o"/> jecortes2304@gmail.com</p>
-                            <p><i className="fa fa-map-marker"/> Madrid</p>
+                            {/*<p><i className="fa fa-map-marker"/> Madrid</p>*/}
                         </address>
                     </div>
                     <div className="col-lg-6 col-md-6 col-xs-10 wow fadeInUp" data-wow-delay="0.6s">
