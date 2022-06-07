@@ -31,15 +31,19 @@ const rotate: GalleryProps['uiElements'] = [
             // https://photoswipe.com/events/#slide-content-events
             pswpInstance.on('contentRemove', () => {
                 const item = pswpInstance.currSlide.content.element
-                item.style.transform = `${item.style.transform.replace(
-                    `rotate(-${item.dataset.rotateAngel}deg)`,
-                    '',
-                )}`
-                delete item.dataset.rotateAngel
+                if (item !== null) {
+
+                    item.style.transform = `${item.style.transform.replace(
+                        `rotate(-${item.dataset.rotateAngel}deg)`,
+                        '',
+                    )}`
+                    delete item.dataset.rotateAngel
+                }
+
             })
         },
     },
-]
+];
 
 
 export default rotate;

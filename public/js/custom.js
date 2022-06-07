@@ -1,5 +1,5 @@
 $(document).ready(function() {
-	$('#home').fullpage({
+	$('#root').fullpage({
             'verticalCentered': false,
             'scrollingSpeed': 600,
             'autoScrolling': false,
