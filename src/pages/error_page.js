@@ -21,7 +21,7 @@ function ErrorPage() {
                 <div className="row">
                     <div className="col-md-12 wow fadeInUp" data-wow-delay="0.4s">
                         <h4>Página no encontrada</h4>
-                        <p>La pagina que busca no existe, o ha sido cambiada recientemente</p>
+                        <p>La página que busca no existe o ha sido cambiada recientemente</p>
                     </div>
                     <br/>
                     <br/>

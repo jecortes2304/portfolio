@@ -12,7 +12,7 @@ const AnimatorRender = (props) => {
             animationData: props.animJson,
         });
         return () => lottie.stop();
-    }, []);
+    }, );
     return <div style={{height:props.height, width:props.width, visibility: props.vis}} ref={anime}/>;};
 
 export default AnimatorRender;

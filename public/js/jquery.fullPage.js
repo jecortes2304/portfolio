@@ -591,7 +591,7 @@
         * Creates a vertical navigation bar.
         */
         function addVerticalNavigation(){
-            $body.append('<div id="' + SECTION_NAV + '"><ul></ul></div>');
+            // $body.append('<div id="' + SECTION_NAV + '"><ul></ul></div>');
             nav = $(SECTION_NAV_SEL);
 
             nav.addClass(function() {
@@ -640,91 +640,91 @@
         var isScrolling = false;
 
         //when scrolling...
-        $window.on('scroll', scrollHandler);
+        // $window.on('scroll', scrollHandler);
 
-        function scrollHandler(){
-            var currentSection;
-
-            if(!options.autoScrolling || options.scrollBar){
-                var currentScroll = $window.scrollTop();
-                var visibleSectionIndex = 0;
-                var initial = Math.abs(currentScroll - document.querySelectorAll(SECTION_SEL)[0].offsetTop);
-
-                //taking the section which is showing more content in the viewport
-                var sections =  document.querySelectorAll(SECTION_SEL);
-                for (var i = 0; i < sections.length; ++i) {
-                    var section = sections[i];
-
-                    var current = Math.abs(currentScroll - section.offsetTop);
-
-                    if(current < initial){
-                        visibleSectionIndex = i;
-                        initial = current;
-                    }
-                }
-
-                //geting the last one, the current one on the screen
-                currentSection = $(sections).eq(visibleSectionIndex);
-            }
-
-            if(!options.autoScrolling || options.scrollBar){
-                //executing only once the first time we reach the section
-                if(!currentSection.hasClass(ACTIVE)){
-                    isScrolling = true;
-                    var leavingSection = $(SECTION_ACTIVE_SEL);
-                    var leavingSectionIndex = leavingSection.index(SECTION_SEL) + 1;
-                    var yMovement = getYmovement(currentSection);
-                    var anchorLink  = currentSection.data('anchor');
-                    var sectionIndex = currentSection.index(SECTION_SEL) + 1;
-                    var activeSlide = currentSection.find(SLIDE_ACTIVE_SEL);
-
-                    if(activeSlide.length){
-                        var slideAnchorLink = activeSlide.data('anchor');
-                        var slideIndex = activeSlide.index();
-                    }
-
-                    if(canScroll){
-                        currentSection.addClass(ACTIVE).siblings().removeClass(ACTIVE);
-
-                        $.isFunction( options.onLeave ) && options.onLeave.call( leavingSection, leavingSectionIndex, sectionIndex, yMovement);
-
-                        $.isFunction( options.afterLoad ) && options.afterLoad.call( currentSection, anchorLink, sectionIndex);
-
-                        activateMenuAndNav(anchorLink, sectionIndex - 1);
-
-                        if(options.anchors.length){
-                            //needed to enter in hashChange event when using the menu with anchor links
-                            lastScrolledDestiny = anchorLink;
-
-                            setState(slideIndex, slideAnchorLink, anchorLink, sectionIndex);
-                        }
-                    }
-
-                    //small timeout in order to avoid entering in hashChange event when scrolling is not finished yet
-                    clearTimeout(scrollId);
-                    scrollId = setTimeout(function(){
-                        isScrolling = false;
-                    }, 100);
-                }
-
-                if(options.fitToSection){
-                    //for the auto adjust of the viewport to fit a whole section
-                    clearTimeout(scrollId2);
-
-                    scrollId2 = setTimeout(function(){
-                        if(canScroll){
-                            //allows to scroll to an active section and
-                            //if the section is already active, we prevent firing callbacks
-                            if($(SECTION_ACTIVE_SEL).is(currentSection)){
-                                isResizing = true;
-                            }
-                            scrollPage(currentSection);
-                            isResizing = false;
-                        }
-                    }, 1000);
-                }
-            }
-        }
+        // function scrollHandler(){
+        //     var currentSection;
+        //
+        //     if(!options.autoScrolling || options.scrollBar){
+        //         var currentScroll = $window.scrollTop();
+        //         var visibleSectionIndex = 0;
+        //         // var initial = Math.abs(currentScroll - document.querySelectorAll(SECTION_SEL)[0].offsetTop);
+        //
+        //         //taking the section which is showing more content in the viewport
+        //         var sections =  document.querySelectorAll(SECTION_SEL);
+        //         for (var i = 0; i < sections.length; ++i) {
+        //             var section = sections[i];
+        //
+        //             // var current = Math.abs(currentScroll - section.offsetTop);
+        //             //
+        //             // if(current < initial){
+        //             //     visibleSectionIndex = i;
+        //             //     initial = current;
+        //             // }
+        //         }
+        //
+        //         //geting the last one, the current one on the screen
+        //         currentSection = $(sections).eq(visibleSectionIndex);
+        //     }
+        //
+        //     if(!options.autoScrolling || options.scrollBar){
+        //         //executing only once the first time we reach the section
+        //         if(!currentSection.hasClass(ACTIVE)){
+        //             isScrolling = true;
+        //             var leavingSection = $(SECTION_ACTIVE_SEL);
+        //             var leavingSectionIndex = leavingSection.index(SECTION_SEL) + 1;
+        //             var yMovement = getYmovement(currentSection);
+        //             var anchorLink  = currentSection.data('anchor');
+        //             var sectionIndex = currentSection.index(SECTION_SEL) + 1;
+        //             var activeSlide = currentSection.find(SLIDE_ACTIVE_SEL);
+        //
+        //             if(activeSlide.length){
+        //                 var slideAnchorLink = activeSlide.data('anchor');
+        //                 var slideIndex = activeSlide.index();
+        //             }
+        //
+        //             if(canScroll){
+        //                 currentSection.addClass(ACTIVE).siblings().removeClass(ACTIVE);
+        //
+        //                 $.isFunction( options.onLeave ) && options.onLeave.call( leavingSection, leavingSectionIndex, sectionIndex, yMovement);
+        //
+        //                 $.isFunction( options.afterLoad ) && options.afterLoad.call( currentSection, anchorLink, sectionIndex);
+        //
+        //                 activateMenuAndNav(anchorLink, sectionIndex - 1);
+        //
+        //                 if(options.anchors.length){
+        //                     //needed to enter in hashChange event when using the menu with anchor links
+        //                     lastScrolledDestiny = anchorLink;
+        //
+        //                     setState(slideIndex, slideAnchorLink, anchorLink, sectionIndex);
+        //                 }
+        //             }
+        //
+        //             //small timeout in order to avoid entering in hashChange event when scrolling is not finished yet
+        //             clearTimeout(scrollId);
+        //             scrollId = setTimeout(function(){
+        //                 isScrolling = false;
+        //             }, 100);
+        //         }
+        //
+        //         if(options.fitToSection){
+        //             //for the auto adjust of the viewport to fit a whole section
+        //             clearTimeout(scrollId2);
+        //
+        //             scrollId2 = setTimeout(function(){
+        //                 if(canScroll){
+        //                     //allows to scroll to an active section and
+        //                     //if the section is already active, we prevent firing callbacks
+        //                     if($(SECTION_ACTIVE_SEL).is(currentSection)){
+        //                         isResizing = true;
+        //                     }
+        //                     scrollPage(currentSection);
+        //                     isResizing = false;
+        //                 }
+        //             }, 1000);
+        //         }
+        //     }
+        // }
 
 
         /**
@@ -2162,7 +2162,7 @@
         }
 
         function showError(type, text){
-            console && console[type] && console[type]('fullPage: ' + text);
+            // console && console[type] && console[type]('fullPage: ' + text);
         }
     };
 })(jQuery, window, document, Math);

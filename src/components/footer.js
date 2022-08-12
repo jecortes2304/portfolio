@@ -14,11 +14,21 @@ function Footer() {
                             CorteStudios &copy; {currentYear}
                         </p>
                         <ul className="social-icon">
-                            <li><a href="https://linkedin.com/in/josé-ernesto-cortes-mendez-7bb8671b6 " target="_blank"
-                                   rel="noreferrer" className="fa fa-linkedin"/></li>
-                            <li><a href="https://twitter.com/Joshecm94" rel="noreferrer" target="_blank" className="fa fa-twitter"/></li>
-                            <li><a href="https://www.instagram.com/josh.e.cortes.m94" target="_blank"
-                                   rel="noreferrer" className="fa fa-instagram"/></li>
+                            <li>
+                                <a href="https://linkedin.com/in/josé-ernesto-cortes-mendez-7bb8671b6"
+                                   target="_blank" rel="noreferrer">
+                                    <i className="fa fa-linkedin" aria-hidden="true"></i></a>
+                            </li>
+                            <li>
+                                <a href="https://twitter.com/Joshecm94"
+                                   target="_blank" rel="noreferrer">
+                                    <i className="fa fa-twitter" aria-hidden="true"></i></a>
+                            </li>
+                            <li>
+                                <a href="https://www.instagram.com/josh.e.cortes.m94"
+                                   target="_blank" rel="noreferrer">
+                                    <i className="fa fa-instagram" aria-hidden="true"></i></a>
+                            </li>
                         </ul>
                     </div>
                 </div>

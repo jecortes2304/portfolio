@@ -1,5 +1,5 @@
 import React from "react";
-import {Link, useLocation, useParams, useNavigate} from "react-router-dom";
+import {useLocation} from "react-router-dom";
 import 'photoswipe/dist/photoswipe.css'
 import {Gallery, Item} from 'react-photoswipe-gallery'
 import rotate from '../components/rotate'
@@ -28,7 +28,7 @@ function Details() {
                     <div className="col-md-1 wow fadeInUp" data-wow-delay="0.6s">
                         <div className="small">
                             <div className="media-object media-left media-body">
-                                <a href={"/"} style={{display: 'flex',  justifyContent:'center', alignItems:'center'}}>
+                                <a href={"/"} style={{display: 'flex', justifyContent: 'center', alignItems: 'center'}}>
                                     <i className="fa fa-home fa-2x" title="Ir a casa"/>
                                 </a>
                             </div>
@@ -50,7 +50,7 @@ function Details() {
                                   height="600">
                                 {({ref, open}) => (
                                     <img className="image-item"
-                                         ref={ref} onClick={open} src={project.banner_src}/>
+                                         ref={ref} onClick={open} src={project.banner_src} alt=""/>
                                 )}
                             </Item>
                             {images.map(image =>
@@ -60,7 +60,7 @@ function Details() {
                                       width={imageSizeWidth} height={imageSizeHeight}>
                                     {({ref, open}) => (
                                         <img className="image-item"
-                                             ref={ref} onClick={open} src=""/>
+                                             ref={ref} onClick={open} src="" alt=""/>
                                     )}
                                 </Item>)}
                         </div>
@@ -78,7 +78,8 @@ function Details() {
                             <div className="wow fadeInUp" data-wow-delay="0.6s">
                                 <div className="small">
                                     <div className="media-object media-left media-body">
-                                        <img className="image-logo" width="50px" height="50px" src={project.logo}/>
+                                        <img className="image-logo" width="50px" height="50px" src={project.logo}
+                                             alt=""/>
                                     </div>
                                 </div>
                             </div>
@@ -141,7 +142,7 @@ function Details() {
                             <div className="wow fadeInUp" data-wow-delay="0.6s">
                                 <div className="small">
                                     <div className="media-object media-left media-body">
-                                        <a href={project.github_url} target="_blank">
+                                        <a rel="noreferrer" href={project.github_url} target="_blank">
                                             <i className="fa fa-github fa-2x" title={project.github_url}
                                                style={{cursor: "pointer"}}/>
                                         </a>
@@ -159,7 +160,8 @@ function Details() {
                                     <h4>Publicada:</h4>
                                 </div>
                                 <div className="col-xs-6">
-                                    <a href={project.publish_url} target="_blank">Ver en Google Play Store</a>
+                                    <a rel="noreferrer" href={project.publish_url} target="_blank">Ver en Google Play
+                                        Store</a>
                                 </div>
                             </div>
                         </div>

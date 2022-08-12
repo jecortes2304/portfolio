@@ -11,7 +11,7 @@ function Project(props) {
             <div className="portfolio-thumb">
                 <img src={props.srcImage} className="img-responsive" alt="portfolio img"/>
                 <div className="portfolio-overlay">
-                    <Link to={"/detalles"}
+                    <Link to={"/details"}
                           state={props.project}>
                         <h4 className="">{props.name}</h4>
                     </Link>

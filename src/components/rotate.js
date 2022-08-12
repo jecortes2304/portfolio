@@ -26,18 +26,6 @@ const rotate: GalleryProps['uiElements'] = [
             )} rotate(-${rotateAngle}deg)`
             item.dataset.rotateAngel = rotateAngle
         },
-        onInit: (el, pswpInstance) => {
-            // remove applied rotation on slide change
-            // https://photoswipe.com/events/#slide-content-events
-            pswpInstance.on('contentRemove', () => {
-                const item = pswpInstance.currSlide.content.element
-                item.style.transform = `${item.style.transform.replace(
-                    `rotate(-${item.dataset.rotateAngel}deg)`,
-                    '',
-                )}`
-                delete item.dataset.rotateAngel
-            })
-        },
     },
 ]
 

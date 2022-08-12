@@ -1,11 +1,10 @@
 import React, {useRef, useState, useEffect} from 'react';
 import emailjs from 'emailjs-com';
-import apiKey from './emailkey';
+import ENV_VARIABLES from './emailkey';
 
 
 function Contact() {
     const form = useRef();
-
     const initialFormValues = {name: "", email: "", message: ""};
     const initialAlertValues = {isVisible: "hidden", alertClass: "alert-info", message: "Mensaje enviado con éxito"};
     const [formValues, setFormValues] = useState(initialFormValues);
@@ -19,12 +18,10 @@ function Contact() {
     };
 
     useEffect(() => {
-        console.log(formErrors);
         if (Object.keys(formErrors).length === 0 && isSubmit) {
-            console.log(formValues);
-            emailjs.sendForm(apiKey.SERVICE_ID, apiKey.TEMPLATE_ID, form.current, apiKey.USER_ID)
+            emailjs.sendForm(ENV_VARIABLES.SERVICE_ID, ENV_VARIABLES.TEMPLATE_ID, form.current, ENV_VARIABLES.USER_ID)
                 .then((result) => {
-                    console.log(result.text);
+                    console.log(result)
                     setAlertValues({...alertValues, isVisible: "visible",
                         alertClass:"alert-info",
                         message:"Mensaje enviado con éxito"
@@ -36,7 +33,7 @@ function Contact() {
                             setAlertValues(initialAlertValues)
                         }, 2000);
                 }, (error) => {
-                    console.log(error.text);
+                    console.log(error)
                     setAlertValues({...alertValues, isVisible: "visible",
                         alertClass:"alert-danger",
                         message:"El mensaje no ha sido enviado"
@@ -49,12 +46,12 @@ function Contact() {
                 });
 
         }
-    }, [formErrors]);
+    },);
 
 
     const validate = (values) => {
         const errors = {};
-        const regex = /^[a-zA-Z0-9._-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,4}$/;
+        const regex = /^[a-zA-Z\d._-]+@[a-zA-Z\d.-]+\.[a-zA-Z]{2,4}$/;
         if (!values.name) {
             errors.name = "Nombre es requerido!"
         }
@@ -88,10 +85,10 @@ function Contact() {
                             <p><i className="fa fa-map-marker"/> Calle Villabona #5, Madrid</p>
                         </address>
                     </div>
-                    <div className="col-lg-6 col-md-6 col-xs-10 wow fadeInUp" data-wow-delay="0.6s">
+                    <div className="col-lg-6 col-md-6 wow fadeInUp" data-wow-delay="0.6s">
                         <div className={alertValues.alertClass} style={{visibility:alertValues.isVisible}}>{alertValues.message}</div>
                         <br/>
-                        <form id="formContact" ref={form} role="form" method="post" onSubmit={handleSubmit}>
+                        <form id="formContact" ref={form} method="post" onSubmit={handleSubmit}>
 
                             <input name="name" type="text" className="form-control" id="name"
                                    placeholder="Nombre" value={formValues.name} onChange={handleChange}/>

@@ -3,7 +3,7 @@ import React from "react";
 
 function Work(props) {
 
-    return <div className="col-md-6 col-xs-11 wow fadeInUp" data-wow-delay="0.6s">
+    return <div className="col-md-6 wow fadeInUp" data-wow-delay="0.6s">
         <div className="media">
             <div className="media-object media-left">
                 <i className={props.image}/>
@@ -17,7 +17,7 @@ function Work(props) {
 }
 
 
-function Sumarize() {
+function Summarize() {
     return (
 
         <div id="work" className="section">
@@ -48,4 +48,4 @@ function Sumarize() {
     );
 }
 
-export default Sumarize
+export default Summarize
