@@ -12,7 +12,8 @@ function Header() {
                     <div className="col-md-2"/>
                     <div className="col-md-8 wow fadeIn" data-wow-delay="0.9s">
                         <h3>José Ernesto Cortes</h3>
-                        <img src={"logo.png"} width={120} height={120} alt="portfolio img"/>
+                        <br/>
+                        <img className="p-4" src={"logo.png"} width={100} height={100} alt="portfolio img"/>
                         <br/>
                         <h1>CorteStudios</h1>
                         <h3 className="rotate">DESARROLLO MÓVIL, DESARROLLO DE SOFTWARE, DESARROLLO WEB</h3>

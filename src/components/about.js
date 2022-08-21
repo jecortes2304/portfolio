@@ -53,7 +53,8 @@ function About() {
                         <div className="col-md-3 wow fadeInRight" data-wow-delay="0.9s">
                             <Skill skill={"Python"} percent={75}/>
                             <Skill skill={"Flask"} percent={56}/>
-                            <Skill skill={"Odoo"} percent={54}/>
+                            <Skill skill={"Odoo ERP"} percent={54}/>
+                            <Skill skill={"Scraping Web"} percent={74}/>
                         </div>
                     </div>
                 </div>

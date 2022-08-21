@@ -10,8 +10,8 @@ function Footer() {
                 <div className="row">
                     <div className="col-md-12 wow fadeIn" data-wow-delay="0.9s">
                         <p id="footer">Todos los derechos reservados
-                            <img width="25px" height="25px" src={"logo.png"} alt="portfolio img"/>
-                            CorteStudios &copy; {currentYear}
+                            <img width="20px" height="20px" src={"logo.png"} alt="portfolio img"/>
+                             CorteStudios &copy; {currentYear}
                         </p>
                         <ul className="social-icon">
                             <li>
