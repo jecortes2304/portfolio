@@ -96,7 +96,9 @@ function Details() {
                                     <div className="media-object media-left media-body">
                                         {project.type === "Aplicación móvil" ?
                                             <i className="fa fa-mobile fa-2x" title={project.type}/> :
-                                            <i className="fa fa-desktop fa-2x" title={project.type}/>
+                                            project.type === "Aplicación web" ?
+                                                <i className="fa fa-cloud fa-2x" title={project.type}/> :
+                                                <i className="fa fa-desktop fa-2x" title={project.type}/>
                                         }
                                     </div>
                                 </div>

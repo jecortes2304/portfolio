@@ -34,27 +34,34 @@ function About() {
                         </div>
                         <div className="col-md-3 wow fadeInRight" data-wow-delay="0.9s">
                             <Skill skill={"Java"} percent={86}/>
-                            <Skill skill={"JavaScript"} percent={61}/>
+                            <Skill skill={"JavaScript"} percent={70}/>
                             <Skill skill={"Kotlin"} percent={52}/>
                             <Skill skill={"C#"} percent={50}/>
+                            <Skill skill={"Typescript"} percent={65}/>
+                            <Skill skill={"Python"} percent={75}/>
                         </div>
                         <div className="col-md-3 wow fadeInRight" data-wow-delay="0.9s">
                             <Skill skill={"Android SDK"} percent={90}/>
                             <Skill skill={"Spring Boot"} percent={63}/>
-                            <Skill skill={"React Js"} percent={42}/>
                             <Skill skill={"JavaFx"} percent={80}/>
-                        </div>
-                        <div className="col-md-3 wow fadeInRight" data-wow-delay="0.9s">
                             <Skill skill={"Java Swing"} percent={76}/>
                             <Skill skill={".Net"} percent={41}/>
-                            <Skill skill={"Wordpress"} percent={81}/>
-                            <Skill skill={"Diseño"} percent={76}/>
+                            <Skill skill={"Wordpress"} percent={18}/>
                         </div>
                         <div className="col-md-3 wow fadeInRight" data-wow-delay="0.9s">
-                            <Skill skill={"Python"} percent={75}/>
+                            <Skill skill={"Figma"} percent={70}/>
+                            <Skill skill={"Photoshop"} percent={76}/>
+                            <Skill skill={"React Js"} percent={65}/>
+                            <Skill skill={"Express JS"} percent={84}/>
+                            <Skill skill={"Next Js"} percent={60}/>
+                            <Skill skill={"Node Js"} percent={80}/>
+                        </div>
+                        <div className="col-md-3 wow fadeInRight" data-wow-delay="0.9s">
                             <Skill skill={"Flask"} percent={56}/>
-                            <Skill skill={"Odoo ERP"} percent={54}/>
+                            <Skill skill={"Odoo ERP"} percent={49}/>
                             <Skill skill={"Scraping Web"} percent={74}/>
+                            <Skill skill={"Fast API"} percent={77}/>
+                            <Skill skill={"Django"} percent={54}/>
                         </div>
                     </div>
                 </div>
