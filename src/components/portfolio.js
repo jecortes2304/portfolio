@@ -7,7 +7,7 @@ function Project(props) {
 
     return (
 
-        <div className="col-md-3 col-xs-6 wow fadeIn" data-wow-delay="0.6s">
+        <div className="col-lg-3 col-md-3 col-xs-6 wow fadeIn" data-wow-delay="0.6s">
             <div className="portfolio-thumb">
                 <img src={props.srcImage} className="img-responsive" alt="portfolio img"/>
                 <div className="portfolio-overlay">

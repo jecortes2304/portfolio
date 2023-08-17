@@ -46,7 +46,7 @@ function About() {
                             <Skill skill={"JavaFx"} percent={80}/>
                             <Skill skill={"Java Swing"} percent={76}/>
                             <Skill skill={".Net"} percent={41}/>
-                            <Skill skill={"Wordpress"} percent={18}/>
+                            <Skill skill={"Wordpress"} percent={80}/>
                         </div>
                         <div className="col-md-3 wow fadeInRight" data-wow-delay="0.9s">
                             <Skill skill={"Figma"} percent={70}/>

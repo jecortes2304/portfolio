@@ -44,6 +44,20 @@
   },
   {
     "id":4,
+    "name":"Cloud Scrapy",
+    "type":"Aplicación web",
+    "banner_src":"images/banners/cloud_scrapy_banner.png",
+    "logo":"images/projects_imgs/cloud_scrapy/logo.png",
+    "images":"images/projects_imgs/cloud_scrapy/",
+    "cant_img":4,
+    "github_url":"https://github.com/jecortes2304/CloudScrapy/",
+    "publish_url":"",
+    "status":"Terminado",
+    "stack_tec":"Javascript, Express JS, Node Js, Puppeteer, Scraping Web, Mongo DB, Redis/DragonFlyDb, Docker/docker-compose",
+    "description":"CloudScrapy es un API-Rest que permite controlar un navegador sin cabeza en un servidor mediante llamadas http a la API, este permite al usuario hacer scraping web, hacer capturas de pantallas y ejecutar instrucciones lo que permite dinamizar la navegación, además, permite hacer ejecuciones para solucionar acciones requeridas, entre otras cosas más. Surge con la idea de abstraer toda la lógica, complejidad y la configuración en un servidor así como el consumo de recursos de las aplicaciones que necesiten usarla. Es un proyecto Open Source bajo la licencia ISC, puedes visitar el repositorio de github y leer parte de la documentación si le interesa."
+  },
+  {
+    "id":5,
     "name":"Casero",
     "type":"Aplicación móvil",
     "banner_src":"images/banners/casero_banner.png",
@@ -57,35 +71,7 @@
     "description":"Casero fue concebida para mejorar la experiencia y brindar nuevas funcionalidades al antiguo sistema de gestión de huéspedes para casas particulares."
   },
   {
-    "id":5,
-    "name":"Conservador Trinidad",
-    "type":"Aplicación móvil",
-    "banner_src":"images/banners/conservador_banner.png",
-    "logo":"images/projects_imgs/conservador/logo.png",
-    "images":"images/projects_imgs/conservador/",
-    "cant_img":5,
-    "github_url":"https://gitfront.io/r/CorteStudios/9jrDP6augZvN/ConservadorTrinidad/",
-    "publish_url":"",
-    "status":"Terminado",
-    "stack_tec":"Kotlin, Android SDK",
-    "description":"Conservaodr Trinidad sirve como una herrmamienta promocional de la empresa Oficina del Conservador de Trindiad, ademas brinda funcionalidades para las inscripciones de eventos relacionados a la entidad."
-  },
-  {
     "id":6,
-    "name":"Recárgame App",
-    "type":"Aplicación móvil",
-    "banner_src":"images/banners/recargame_banner.png",
-    "logo":"images/projects_imgs/recargame/logo.png",
-    "images":"images/projects_imgs/recargame/",
-    "cant_img":8,
-    "github_url":"https://gitfront.io/r/CorteStudios/AQFN4tD5dUV3/Recargame-app/",
-    "publish_url":"https://play.google.com/store/apps/details?id=com.cortestudios.recargameapp",
-    "status":"Terminado",
-    "stack_tec":"Java, Room, Android SDK",
-    "description":"Recárgame App fue desarrollada como parte del encargo de un cliente para gestionar las facturas y transferencias del sistema de dicha compañia(Recárgame), permitiendo la sincronizacion local y online de los datos."
-  },
-  {
-    "id":7,
     "name":"Dememo",
     "type":"Aplicación móvil",
     "banner_src":"images/banners/dememo_banner.png",
@@ -99,18 +85,32 @@
     "description":"Dememo fue un proyecto en conjunto donde fui coautor, la idea original fue concebida por el Ing. Elioenai Reyes González (https://www.linkedin.com/in/elioenai-reyes-gonzález/) como parte de un proyecto para el movimiento cristiano."
   },
   {
-    "id":8,
-    "name":"Cloud Scrapy",
-    "type":"Aplicación web",
-    "banner_src":"images/banners/cloud_scrapy_banner.png",
-    "logo":"images/projects_imgs/cloud_scrapy/logo.png",
-    "images":"images/projects_imgs/cloud_scrapy/",
-    "cant_img":4,
-    "github_url":"https://github.com/jecortes2304/CloudScrapy/",
+    "id":7,
+    "name":"Conservador Trinidad",
+    "type":"Aplicación móvil",
+    "banner_src":"images/banners/conservador_banner.png",
+    "logo":"images/projects_imgs/conservador/logo.png",
+    "images":"images/projects_imgs/conservador/",
+    "cant_img":5,
+    "github_url":"https://gitfront.io/r/CorteStudios/9jrDP6augZvN/ConservadorTrinidad/",
     "publish_url":"",
     "status":"Terminado",
-    "stack_tec":"Javascript, Express JS, Node Js, Puppeteer, Scraping Web, Mongo DB, Redis/DragonFlyDb, Docker/docker-compose",
-    "description":"CloudScrapy es un API-Rest que permite controlar un navegador sin cabeza en un servidor mediante llamadas http a la API, este permite al usuario hacer scraping web, hacer capturas de pantallas y ejecutar instrucciones lo que permite dinamizar la navegación, además, permite hacer ejecuciones para solucionar acciones requeridas, entre otras cosas más. Surge con la idea de abstraer toda la lógica, complejidad y la configuración en un servidor así como el consumo de recursos de las aplicaciones que necesiten usarla. Es un proyecto Open Source bajo la licencia ISC, puedes visitar el repositorio de github y leer parte de la documentación si le interesa."
+    "stack_tec":"Kotlin, Android SDK",
+    "description":"Conservaodr Trinidad sirve como una herrmamienta promocional de la empresa Oficina del Conservador de Trindiad, ademas brinda funcionalidades para las inscripciones de eventos relacionados a la entidad."
+  },
+  {
+    "id":8,
+    "name":"Recárgame App",
+    "type":"Aplicación móvil",
+    "banner_src":"images/banners/recargame_banner.png",
+    "logo":"images/projects_imgs/recargame/logo.png",
+    "images":"images/projects_imgs/recargame/",
+    "cant_img":8,
+    "github_url":"https://gitfront.io/r/CorteStudios/AQFN4tD5dUV3/Recargame-app/",
+    "publish_url":"https://play.google.com/store/apps/details?id=com.cortestudios.recargameapp",
+    "status":"Terminado",
+    "stack_tec":"Java, Room, Android SDK",
+    "description":"Recárgame App fue desarrollada como parte del encargo de un cliente para gestionar las facturas y transferencias del sistema de dicha compañia(Recárgame), permitiendo la sincronizacion local y online de los datos."
   }
 
 ]
