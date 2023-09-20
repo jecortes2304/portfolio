@@ -17,7 +17,7 @@ function Header() {
                         <br/>
                         <h1>CorteStudios</h1>
                         <h3 className="rotate">DESARROLLO MÓVIL, DESARROLLO DE SOFTWARE, DESARROLLO WEB</h3>
-                        <p>Ingeniero de software con experiencia en el desarrollo móvil y de escritorio, con ganas de
+                        <p className="mt-3" style={{ color: 'white', marginTop: '30px' }}>Ingeniero de software con más de 4 años de experiencia, con ganas de
                             aprender cada día y superarme mediante nuevos desafíos</p>
                         <a href={cvUrl}  target="_blank" rel="noopener noreferrer" className="btn btn-default smoothScroll wow fadeInUp" data-wow-delay="1s">
                             Descargar CV</a>

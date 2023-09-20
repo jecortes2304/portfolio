@@ -173,7 +173,7 @@ function Details() {
                     <h4>Descripción:</h4>
                     <div className="row">
                         <div className="form-check-inline">
-                            <p id="description">{project.description}</p>
+                            <p dangerouslySetInnerHTML={{ __html: project.description }} id="description"></p>
                         </div>
                     </div>
                 </div>

@@ -25,7 +25,7 @@
     "publish_url":"",
     "status":"Terminado",
     "stack_tec":"Java Swing, PDFReader",
-    "description":"Find my phrase surge como una inquietud y un proyecto personal, de manera simple permite encontrar una lista de PDFs que contengan una palabra o una frase con solo brindar un directorio."
+    "description":"Find my phrase surge como una inquietud y un proyecto personal, de manera simple permite encontrar una lista de PDF que contengan una palabra o una frase con solo brindar un directorio."
 
   },
   {
@@ -40,7 +40,7 @@
     "publish_url":"",
     "status":"Terminado",
     "stack_tec":"C#, Windows Form",
-    "description":"Power Off permite reocrrer todos los equipos de una LAN para ejecutar comandos o automatizar los mismos mediante una interfaz sencilla y cómoda"
+    "description":"Power Off permite recorrer todos los equipos de una LAN para ejecutar comandos o automatizar los mismos mediante una interfaz sencilla y cómoda"
   },
   {
     "id":4,
@@ -50,11 +50,11 @@
     "logo":"images/projects_imgs/cloud_scrapy/logo.png",
     "images":"images/projects_imgs/cloud_scrapy/",
     "cant_img":4,
-    "github_url":"https://github.com/jecortes2304/CloudScrapy/",
+    "github_url":"https://gitfront.io/r/CorteStudios/aCGin7BUJQMz/CloudScrapy/",
     "publish_url":"",
     "status":"Terminado",
     "stack_tec":"Javascript, Express JS, Node Js, Puppeteer, Scraping Web, Mongo DB, Redis/DragonFlyDb, Docker/docker-compose",
-    "description":"CloudScrapy es un API-Rest que permite controlar un navegador sin cabeza en un servidor mediante llamadas http a la API, este permite al usuario hacer scraping web, hacer capturas de pantallas y ejecutar instrucciones lo que permite dinamizar la navegación, además, permite hacer ejecuciones para solucionar acciones requeridas, entre otras cosas más. Surge con la idea de abstraer toda la lógica, complejidad y la configuración en un servidor así como el consumo de recursos de las aplicaciones que necesiten usarla. Es un proyecto Open Source bajo la licencia ISC, puedes visitar el repositorio de github y leer parte de la documentación si le interesa."
+    "description":"CloudScrapy es un API-Rest que permite controlar un navegador sin cabeza en un servidor mediante llamadas http a la API, este permite al usuario hacer scraping web, hacer capturas de pantallas y ejecutar instrucciones lo que permite dinamizar la navegación, además, permite hacer ejecuciones para solucionar acciones requeridas, entre otras cosas más. Surge con la idea de abstraer toda la lógica, complejidad y la configuración en un servidor así como el consumo de recursos de las aplicaciones que necesiten usarla. Posee una licencia ISC, puedes visitar el repositorio de github y leer parte de la documentación si le interesa."
   },
   {
     "id":5,
@@ -82,7 +82,7 @@
     "publish_url":"https://play.google.com/store/apps/details?id=com.erg.memorized",
     "status":"Terminado",
     "stack_tec":"Java, Firebase, Realm, Android SDK",
-    "description":"Dememo fue un proyecto en conjunto donde fui coautor, la idea original fue concebida por el Ing. Elioenai Reyes González (https://www.linkedin.com/in/elioenai-reyes-gonzález/) como parte de un proyecto para el movimiento cristiano."
+    "description":"Dememo fue un proyecto conjunto en el que participé como co-desarrollador, centrándome principalmente en el desarrollo de algunas características específicas. La idea original y desarrollo principal fue concebida por el <a href='https://www.linkedin.com/in/elioenai-reyes-gonzález/' target='_blank'>Ing. Elioenai Reyes González</a> como parte de un proyecto para el movimiento cristiano."
   },
   {
     "id":7,
@@ -96,7 +96,7 @@
     "publish_url":"",
     "status":"Terminado",
     "stack_tec":"Kotlin, Android SDK",
-    "description":"Conservaodr Trinidad sirve como una herrmamienta promocional de la empresa Oficina del Conservador de Trindiad, ademas brinda funcionalidades para las inscripciones de eventos relacionados a la entidad."
+    "description":"Conservador Trinidad sirve como una herramienta promocional de la empresa Oficina del Conservador de Trindiad, además brinda funcionalidades para las inscripciones de eventos relacionados a la entidad."
   },
   {
     "id":8,
@@ -110,7 +110,21 @@
     "publish_url":"https://play.google.com/store/apps/details?id=com.cortestudios.recargameapp",
     "status":"Terminado",
     "stack_tec":"Java, Room, Android SDK",
-    "description":"Recárgame App fue desarrollada como parte del encargo de un cliente para gestionar las facturas y transferencias del sistema de dicha compañia(Recárgame), permitiendo la sincronizacion local y online de los datos."
+    "description":"Recárgame App fue desarrollada como parte del encargo de un cliente para gestionar las facturas y transferencias del sistema de dicha compañía(Recárgame), permitiendo la sincronización local y online de los datos."
+  },
+  {
+    "id":9,
+    "name":"Casero Server",
+    "type":"Aplicación web",
+    "banner_src":"images/banners/casero_server_banner.png",
+    "logo":"images/projects_imgs/casero/logo.png",
+    "images":"images/projects_imgs/casero_server/",
+    "cant_img":5,
+    "github_url":"https://gitfront.io/r/CorteStudios/YoM29uPTsSoR/caseroserver/",
+    "publish_url":"",
+    "status":"En proceso",
+    "stack_tec":"Java, Spring Boot, MySQL, Materializecss, Javascript, Tomcat, JavaMail, Thymeleaf",
+    "description":"Casero server es una simple web que fue ideada para gestionar las solicitudes de licencias para la aplicación Android de Casero, permite registrar las solicitudes de licencias, eliminarlas, crearlas y enviarlas mediante correo electrónico"
   }
 
 ]
