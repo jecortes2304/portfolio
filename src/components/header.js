@@ -1,6 +1,6 @@
 import React from "react";
 
-const cvUrl = "https://drive.google.com/file/d/1EUnx2VSJn0ojN09nPOQ304bGkj2jR_oj/view?usp=sharing";
+const cvUrl = "https://drive.google.com/file/d/1Zz0RX59SPUqVH839iGk4nc-OU7lzCe8a/view";
 
 
 function Header() {
